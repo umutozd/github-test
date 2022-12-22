@@ -1,0 +1,10 @@
+name: Manual Deployment
+on:
+  workflow_dispatch:
+
+jobs:
+  printenv:
+    steps:
+      - name: printenv-step1
+        run: |
+          echo $GITHUB_REPOSITORY
