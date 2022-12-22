@@ -1,9 +1,10 @@
-name: Manual Deployment
+name: Test Workflow
 on:
   workflow_dispatch:
 
 jobs:
   printenv:
+    runs-on: ubuntu-latest
     steps:
       - name: printenv-step1
         run: |
