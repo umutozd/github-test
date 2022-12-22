@@ -8,4 +8,11 @@ jobs:
     steps:
       - name: printenv-step1
         run: |
-          echo $GITHUB_REPOSITORY
+          echo GITHUB_REPOSITORY:  $GITHUB_REPOSITORY
+          echo GITHUB_ACTION:      $GITHUB_ACTION
+          echo GITHUB_ACTION_PATH: $GITHUB_ACTION_PATH
+          echo GITHUB_ACTOR: $GITHUB_ACTOR
+          echo GITHUB_JOB: $GITHUB_JOB
+          echo GITHUB_RUN_ID: $GITHUB_RUN_ID
+          echo GITHUB_RUN_NUMBER: $GITHUB_RUN_NUMBER
+          echo GITHUB_WORKFLOW: $GITHUB_WORKFLOW
