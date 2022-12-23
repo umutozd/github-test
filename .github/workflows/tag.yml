@@ -1,0 +1,16 @@
+name: Tag Job
+on:
+  push:
+    tags: "*"
+
+jobs:
+  onTagJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: |
+          echo "Tag job is running "
+          echo GITHUB_REF:       $GITHUB_REF
+          echo GITHUB_REF_NAME:  $GITHUB_REF_NAME
+          echo GITHUB_REF_TYPE:  $GITHUB_REF_TYPE
+          
